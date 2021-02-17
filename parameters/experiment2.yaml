@@ -1,0 +1,22 @@
+model_name: Transformer
+base_log_path: ./logs
+data_path: /home/data
+
+fixed_parameters:
+  height: 28
+  width: 28
+  num_workers: 4
+  pin_memory: true
+
+model_parameters:
+  layers_num: 1
+  hidden_dim: 128
+  heads: 1
+  dropout_rate: 0.1
+  tokens: 784
+
+learning_parameters:
+  epochs: 200
+  batch_size: 256
+  learning_rate: 0.01
+  lr_decay: 0.000001
